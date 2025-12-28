@@ -1,0 +1,7 @@
+streamlit
+MetaTrader5
+pandas
+plotly
+requests
+toml
+pytz
