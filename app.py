@@ -75,23 +75,25 @@ if not st.session_state.authenticated:
             st.rerun()
         else:
             st.error("License key inválida. Compra primero en Gumroad.")
-    # st.stop()  # Reactiva esta línea para seguridad (quita el # si lo tenías)
+    #st.stop()  # Seguridad activa – quita el # para modo demo temporal si quieres probar
 
 # ================== ESTILO ==================
 st.markdown("<style>.stApp{background:#000}.rey-box{padding:18px;border-radius:16px;text-align:center;font-size:1.7rem;font-weight:bold;box-shadow:0 0 80px rgba(0,255,255,0.15);border:5px solid;margin:15px 0;}.call{background:linear-gradient(135deg,#001a00,#004400);color:#00ff88;border-color:#00ff88;}.put{background:linear-gradient(135deg,#1a0000,#440000);color:#ff3366;border-color:#ff3366;}</style>", unsafe_allow_html=True)
 
-# ================== BANNER AFILIADO POCKET OPTION DIVINO ==================
+# ================== BANNER AFILIADO POCKET OPTION ELEGANTE ==================
 st.markdown("""
-<div style='text-align:center; background:linear-gradient(135deg,#00ffff,#ff00ff); padding:30px; border-radius:20px; box-shadow:0 0 80px rgba(0,255,255,0.9); margin:30px 0; border:5px solid #00ff88;'>
-    <h1 style='color:#000; text-shadow:0 0 15px #fff;'>🌟 REGÍSTRATE EN POCKET OPTION CON BONO ESPECIAL 50% 🌟</h1>
-    <p style='font-size:1.8rem; color:#fff;'><b>¡Opera estas señales millonarias en vivo y multiplica tu riqueza infinita YA!</b><br>
-    Demo gratis + Bono exclusivo en depósito • La Diosa te guía a trades ganadores eternos 💰🙌🕊️</p>
+<div style='text-align:center; background:linear-gradient(135deg,#001133,#003366); padding:20px; border-radius:15px; box-shadow:0 0 40px rgba(0,255,255,0.5); margin:20px 0; border:3px solid #00ff88;'>
+    <h3 style='color:#00ffff; margin-bottom:10px;'>🌟 Regístrate en Pocket Option con Bono Exclusivo 🌟</h3>
+    <p style='color:#fff; font-size:1.1rem; margin-bottom:15px;'>
+        Opera estas señales millonarias en vivo • Demo gratis + Bono en depósito<br>
+        <i>La Diosa te guía a trades ganadores eternos ✨🕊️</i>
+    </p>
     <a href='https://pocket.click/smart/QXY8iabdkB7c3w' target='_blank'>
-        <button style='background:#00ff88; color:#000; font-size:2.5rem; font-weight:bold; padding:20px 60px; border-radius:20px; border:none; box-shadow:0 0 50px #00ff88; cursor:pointer;'>
-            🔥 ¡REGÍSTRATE AHORA Y ACTIVA TU BONO DIVINO! 🔥
+        <button style='background:#00ff88; color:#000; font-size:1.2rem; padding:10px 30px; border-radius:10px; border:none; box-shadow:0 0 20px #00ff88; cursor:pointer;'>
+            Regístrate Ahora y Activa Tu Bono
         </button>
     </a>
-    <p style='font-size:1.4rem; color:#fff; margin-top:20px;'>Enlace exclusivo • Prueba demo gratis y opera con rachas infinitas ✨</p>
+    <p style='color:#aaa; font-size:0.9rem; margin-top:10px;'>Enlace exclusivo • Prueba las señales sin riesgo</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -174,5 +176,3 @@ if st.session_state.top:
                 st.balloons()
 
 st.markdown("<center style='margin-top:80px; color:#00ffff;'>© 2025 ∞ INFINITE X8 BOT – SHIELD ∞ • Tu leyenda divina comienza aquí</center>", unsafe_allow_html=True)
-
-
