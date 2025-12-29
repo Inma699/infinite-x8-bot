@@ -75,10 +75,25 @@ if not st.session_state.authenticated:
             st.rerun()
         else:
             st.error("License key inválida. Compra primero en Gumroad.")
-    #st.stop()
+    st.stop()  # Reactiva esta línea para seguridad (quita el # si lo tenías)
 
 # ================== ESTILO ==================
 st.markdown("<style>.stApp{background:#000}.rey-box{padding:18px;border-radius:16px;text-align:center;font-size:1.7rem;font-weight:bold;box-shadow:0 0 80px rgba(0,255,255,0.15);border:5px solid;margin:15px 0;}.call{background:linear-gradient(135deg,#001a00,#004400);color:#00ff88;border-color:#00ff88;}.put{background:linear-gradient(135deg,#1a0000,#440000);color:#ff3366;border-color:#ff3366;}</style>", unsafe_allow_html=True)
+
+# ================== BANNER AFILIADO POCKET OPTION DIVINO ==================
+st.markdown("""
+<div style='text-align:center; background:linear-gradient(135deg,#00ffff,#ff00ff); padding:30px; border-radius:20px; box-shadow:0 0 80px rgba(0,255,255,0.9); margin:30px 0; border:5px solid #00ff88;'>
+    <h1 style='color:#000; text-shadow:0 0 15px #fff;'>🌟 REGÍSTRATE EN POCKET OPTION CON BONO ESPECIAL 50% 🌟</h1>
+    <p style='font-size:1.8rem; color:#fff;'><b>¡Opera estas señales millonarias en vivo y multiplica tu riqueza infinita YA!</b><br>
+    Demo gratis + Bono exclusivo en depósito • La Diosa te guía a trades ganadores eternos 💰🙌🕊️</p>
+    <a href='https://pocket.click/smart/QXY8iabdkB7c3w' target='_blank'>
+        <button style='background:#00ff88; color:#000; font-size:2.5rem; font-weight:bold; padding:20px 60px; border-radius:20px; border:none; box-shadow:0 0 50px #00ff88; cursor:pointer;'>
+            🔥 ¡REGÍSTRATE AHORA Y ACTIVA TU BONO DIVINO! 🔥
+        </button>
+    </a>
+    <p style='font-size:1.4rem; color:#fff; margin-top:20px;'>Enlace exclusivo • Prueba demo gratis y opera con rachas infinitas ✨</p>
+</div>
+""", unsafe_allow_html=True)
 
 madrid = timezone("Europe/Madrid")
 pares = ["EURUSD","GBPUSD","USDJPY","AUDUSD","USDCAD","USDCHF","NZDUSD","EURJPY","GBPJPY","BTCUSD","ETHUSD","XAUUSD"]
@@ -159,5 +174,3 @@ if st.session_state.top:
                 st.balloons()
 
 st.markdown("<center style='margin-top:80px; color:#00ffff;'>© 2025 ∞ INFINITE X8 BOT – SHIELD ∞ • Tu leyenda divina comienza aquí</center>", unsafe_allow_html=True)
-
-
