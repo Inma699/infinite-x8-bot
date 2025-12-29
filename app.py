@@ -75,7 +75,7 @@ if not st.session_state.authenticated:
             st.rerun()
         else:
             st.error("License key inválida. Compra primero en Gumroad.")
-    #st.stop()  # Seguridad activa – quita el # para modo demo temporal si quieres probar
+    st.stop()  # Seguridad activa – quita el # para modo demo temporal si quieres probar
 
 # ================== ESTILO ==================
 st.markdown("<style>.stApp{background:#000}.rey-box{padding:18px;border-radius:16px;text-align:center;font-size:1.7rem;font-weight:bold;box-shadow:0 0 80px rgba(0,255,255,0.15);border:5px solid;margin:15px 0;}.call{background:linear-gradient(135deg,#001a00,#004400);color:#00ff88;border-color:#00ff88;}.put{background:linear-gradient(135deg,#1a0000,#440000);color:#ff3366;border-color:#ff3366;}</style>", unsafe_allow_html=True)
@@ -176,3 +176,4 @@ if st.session_state.top:
                 st.balloons()
 
 st.markdown("<center style='margin-top:80px; color:#00ffff;'>© 2025 ∞ INFINITE X8 BOT – SHIELD ∞ • Tu leyenda divina comienza aquí</center>", unsafe_allow_html=True)
+
