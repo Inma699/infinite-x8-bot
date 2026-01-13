@@ -143,9 +143,12 @@ st.markdown('<div class="chat-container">', unsafe_allow_html=True)
 
 # Paso 1 — Preguntar nombre
 if st.session_state.step == "ask_name":
+    with st.spinner("TRONAX se está despertando… ⏳✨"):
+        time.sleep(2)
     st.chat_message("assistant").markdown(
         "**TRONAX despierta…** 🚀🌌\n\n¿Cómo te llamas?"
     )
+
 
     user_input = st.chat_input("Escribe tu nombre…")
 
@@ -237,3 +240,4 @@ _No es posible continuar el diálogo._
 st.markdown("</div>", unsafe_allow_html=True)
 
 st.caption("Iris Sha Light School • Conocimiento, Poder y Conciencia ∞ 👑🌌")
+
