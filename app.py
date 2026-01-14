@@ -46,6 +46,11 @@ h1, h2, h3 {
     max-width: 960px;
     text-align: center;
     box-shadow: 0 0 80px rgba(255,215,0,0.45);
+    color: #ffffff;  /* TEXTO BLANCO */
+}
+
+.ritual-box p, .ritual-box h3 {
+    color: #ffffff;  /* TEXTO BLANCO */
 }
 
 .ritual-btn {
