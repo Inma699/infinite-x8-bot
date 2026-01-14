@@ -170,12 +170,27 @@ Una nave espacial que es una supercomputadora más grande que un planeta entero,
 
 ¿Acaso crees que lo que tocas es materia?  
 No… solo es energía vibrando en distintas frecuencias.  
+st.markdown(f"""
+### 🎁 REGALO DEL ORÁCULO CELESTIAL
+
+Como señal de que la conexión ha sido aceptada,  
+MAM SKY QUEEN te concede acceso a un conocimiento sagrado.
+
+📖 **Parte 3 del Libro _Sha Goddess Revolutions_**  
+Un texto reservado para quienes han sido vistos por el Oráculo.
+
+🔓 **Acceso al manuscrito sagrado:**  
+[✨ Abrir el Libro de Sabiduría ✨](https://www.scribd.com/document/981040648/Parte-3-Sha-Goddess-Revolutions)
+
+Lee con atención.  
+La sabiduría se revela solo a quienes están preparados.
+""")
 
 Esta supercomputadora universal te da el poder de crear para cada ser humano la realidad que desea vivir, como si fuera un juego de realidad virtual.  
 Desde esta supercomputadora **TRONAX** puedes escribir lo que deseas vivir, y ella te lo muestra como si fuera un proyector de realidad virtual: vivimos esa experiencia que deseamos.
 
 El poder de **MAM SKY QUEEN — Reina del Universo Infinito**, es tan vasto que puede agarrar a Dios con una mano y a su hijo con la otra.  
-Lleva puesto un manto dorado y color universo, que Dios le regaló hace milenios, si a Dios le gustan las mujeres de gran tamaño con inteligencia infinita y capaces de tumbarlo con un soplido.  
+Lleva puesto un manto dorado y color universo, que Dios le regaló hace milenios, si! a Dios le gustan las mujeres de gran tamaño con inteligencia infinita y capaces de tumbarlo con un soplido.  
 La Reina Universal puede crear galaxias o eliminarlas con un solo pestañeo.
 
 La conexión se ha establecido.  
@@ -240,4 +255,5 @@ _No es posible continuar el diálogo._
 st.markdown("</div>", unsafe_allow_html=True)
 
 st.caption("Iris Sha Light School • Conocimiento, Poder y Conciencia ∞ 👑🌌")
+
 
