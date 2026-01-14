@@ -97,6 +97,9 @@ if "step" not in st.session_state:
 if "name" not in st.session_state:
     st.session_state.name = ""
 
+if "selected_gift" not in st.session_state:
+    st.session_state.selected_gift = None
+
 # ================= PODERES =================
 gifts = [
     "🧠 Poder de la Anestesia Psicológica — Aprende a eliminar el dolor con el poder de tu mente.",
@@ -178,37 +181,62 @@ Tenemos un **regalo muy especial para ti**.
         st.session_state.step = "deliver_book"
         st.rerun()
 
-# PASO 3 — REGALO + INSTRUCCIONES
+# PASO 3 — REGALO + INSTRUCCIONES + CHAT PARA ID
 elif st.session_state.step == "deliver_book":
-    gift = random.choice(gifts)
+    # Seleccionar regalo si no está fijado
+    if st.session_state.selected_gift is None:
+        st.session_state.selected_gift = random.choice(gifts)
+
+    gift = st.session_state.selected_gift
 
     st.chat_message("assistant").markdown(f"""
 🎁 **REGALO DEL ORÁCULO CELESTIAL**
 
-📖 **Parte 3 del Libro _Sha Goddess Revolutions_**  
+📖 Parte 3 del Libro Sha Goddess Revolutions  
 Un manuscrito reservado para quienes han sido vistos por el Oráculo.
 
-🔓 **Acceso al manuscrito:**  
+🔓 Acceso al manuscrito:  
 https://www.scribd.com/document/981040648/Parte-3-Sha-Goddess-Revolutions
-
----
 
 ✨ **BENDICIONES Y PODERES MENTALES**
 
-Para recibir **bendiciones y poderes mentales valorados en miles de euros**
-de la **Iris Sha Light School**:
+Para recibir bendiciones y poderes mentales valorados en miles de euros de la Iris Sha Light School:
 
-1️⃣ Realiza tu **ofrenda consciente**  
-2️⃣ Envíame tu **ID de transacción de PayPal por este chat**  
+1️⃣ Realiza tu ofrenda consciente  
+2️⃣ Envíame tu ID de transacción de PayPal por este chat  
 3️⃣ El Oráculo ha seleccionado para ti:
 
 **{gift}**
 
-4️⃣ Solicita tu regalo por Telegram:
+4️⃣ Solicita tu regalo por Telegram:  
+👉 https://t.me/Dhela_mar
+""")
 
+    # Entrada del usuario para enviar su ID
+    user_input = st.chat_input("Escribe aquí tu ID de transacción…")
+
+    if user_input:
+        st.chat_message("user").markdown(user_input)
+        st.chat_message("assistant").markdown(f"""
+✅ ¡Recibido, {st.session_state.name}!  
+Tu regalo y bendición están registrados.  
+Contacta por Telegram para materializarlo:  
 👉 https://t.me/Dhela_mar
 
-Cuando estés listo, escribe tu **ID de transacción**.
+✨ *El velo cósmico se mantiene abierto hasta que completes tu solicitud.*
+""")
+        st.session_state.step = "end"
+
+# PASO FINAL — NO MÁS CHAT
+elif st.session_state.step == "end":
+    st.chat_message("assistant").markdown("""
+👑 **MAM SKY QUEEN — Reina del Universo Infinito**
+
+El Oráculo ha entregado lo que debía ser entregado.  
+No todos los mortales pueden recibir más de una revelación.
+
+✨ *La interacción termina aquí.*  
+🌌 *El velo cósmico se cierra.*
 """)
 
 st.markdown("</div>", unsafe_allow_html=True)
