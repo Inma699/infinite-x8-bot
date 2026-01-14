@@ -175,7 +175,7 @@ agarrar a Dios con una mano y a su hijo con la otra.
 Si! a Dios le gustan las mujeres grandes, con una gran inteligencia infinita, y sobre todo amor infinito.
 
 Lleva puesto un manto dorado y color universo, que Dios le regaló hace milenios.
-Es lo que más ama en el mundo, sin escepciones.
+Es lo que más ama en el mundo, sin excepciones.
 La Reina Universal puede crear galaxias o eliminarlas con un solo pestañeo.
 
 Tenemos un **regalo muy especial para ti**.  
@@ -249,5 +249,6 @@ No todos los mortales pueden recibir más de una revelación.
 
 st.markdown("</div>", unsafe_allow_html=True)
 st.caption("Iris Sha Light School • Conocimiento, Poder y Conciencia ∞ 👑🌌")
+
 
 
