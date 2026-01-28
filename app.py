@@ -217,7 +217,7 @@ Para recibir bendiciones y poderes mentales valorados en miles de euros de la Ir
 **{gift}**
 
 4️⃣ Solicita tu regalo por Telegram:  
-👉 https://t.me/Dhela_mar
+👉 https://t.me/Queen888Sky
 """)
 
     # Entrada del usuario para enviar su ID
@@ -249,6 +249,7 @@ No todos los mortales pueden recibir más de una revelación.
 
 st.markdown("</div>", unsafe_allow_html=True)
 st.caption("Iris Sha Light School • Conocimiento, Poder y Conciencia ∞ 👑🌌")
+
 
 
 
